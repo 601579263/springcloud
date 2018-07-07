@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+  <classPathEntry location="D:\æ–°å»ºæ–‡ä»¶å¤¹ (3)\tools\mysql-connector-java-5.1.18.jar" />
+
+  <context id="mysqlTables" targetRuntime="MyBatis3">
+ <commentGenerator>
+   <property name="suppressAllComments" value="true" />
+ </commentGenerator>
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+        connectionURL="jdbc:mysql://127.0.0.1:3306/pactera-member"
+        userId="root"
+        password="123456">
+    </jdbcConnection>
+
+    <javaTypeResolver >
+      <property name="forceBigDecimals" value="false" />
+    </javaTypeResolver>
+		<!-- Éú³ÉÄ£ÐÍµÄ°üÃûºÍÎ»ÖÃ-->  
+    <javaModelGenerator targetPackage="entity" targetProject="D:\æ–°å»ºæ–‡ä»¶å¤¹ (3)\tools\newJar\">
+      <property name="enableSubPackages" value="true" />
+      <property name="trimStrings" value="true" />
+    </javaModelGenerator>
+		<!-- Éú³ÉÓ³ÉäÎÄ¼þµÄ°üÃûºÍÎ»ÖÃ-->  
+    <sqlMapGenerator targetPackage="entity.mapper"  targetProject="D:\æ–°å»ºæ–‡ä»¶å¤¹ (3)\tools\newJar\">
+      <property name="enableSubPackages" value="true" />
+    </sqlMapGenerator>
+		<!-- Éú³ÉDAOµÄ°üÃûºÍÎ»ÖÃ-->
+    <javaClientGenerator type="XMLMAPPER" targetPackage="entity.mapper"  targetProject="D:\æ–°å»ºæ–‡ä»¶å¤¹ (3)\tools\newJar\">
+      <property name="enableSubPackages" value="true" />
+    </javaClientGenerator>
+    <!-- ÒªÉú³ÉÄÄÐ©±í-->  
+		<table tableName="mb_order" domainObjectName="MerBbsPublish" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>  
+  </context>
+</generatorConfiguration>

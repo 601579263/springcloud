@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="entity.mapper.UserSensorMapper" >
+  <resultMap id="BaseResultMap" type="entity.UserSensor" >
+    <id column="s_id" property="sId" jdbcType="INTEGER" />
+    <result column="st_id" property="stId" jdbcType="INTEGER" />
+    <result column="s_imei" property="sImei" jdbcType="VARCHAR" />
+    <result column="s_name" property="sName" jdbcType="VARCHAR" />
+    <result column="create_date" property="createDate" jdbcType="TIMESTAMP" />
+    <result column="s_x_value" property="sXValue" jdbcType="VARCHAR" />
+    <result column="s_y_value" property="sYValue" jdbcType="VARCHAR" />
+    <result column="s_install_date" property="sInstallDate" jdbcType="TIMESTAMP" />
+    <result column="s_work_date" property="sWorkDate" jdbcType="TIMESTAMP" />
+    <result column="s_description" property="sDescription" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    s_id, st_id, s_imei, s_name, create_date, s_x_value, s_y_value, s_install_date, s_work_date, 
+    s_description
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_user_sensor
+    where s_id = #{sId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_user_sensor
+    where s_id = #{sId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="entity.UserSensor" >
+    insert into t_user_sensor (s_id, st_id, s_imei, 
+      s_name, create_date, s_x_value, 
+      s_y_value, s_install_date, s_work_date, 
+      s_description)
+    values (#{sId,jdbcType=INTEGER}, #{stId,jdbcType=INTEGER}, #{sImei,jdbcType=VARCHAR}, 
+      #{sName,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}, #{sXValue,jdbcType=VARCHAR}, 
+      #{sYValue,jdbcType=VARCHAR}, #{sInstallDate,jdbcType=TIMESTAMP}, #{sWorkDate,jdbcType=TIMESTAMP}, 
+      #{sDescription,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="entity.UserSensor" >
+    insert into t_user_sensor
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="sId != null" >
+        s_id,
+      </if>
+      <if test="stId != null" >
+        st_id,
+      </if>
+      <if test="sImei != null" >
+        s_imei,
+      </if>
+      <if test="sName != null" >
+        s_name,
+      </if>
+      <if test="createDate != null" >
+        create_date,
+      </if>
+      <if test="sXValue != null" >
+        s_x_value,
+      </if>
+      <if test="sYValue != null" >
+        s_y_value,
+      </if>
+      <if test="sInstallDate != null" >
+        s_install_date,
+      </if>
+      <if test="sWorkDate != null" >
+        s_work_date,
+      </if>
+      <if test="sDescription != null" >
+        s_description,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="sId != null" >
+        #{sId,jdbcType=INTEGER},
+      </if>
+      <if test="stId != null" >
+        #{stId,jdbcType=INTEGER},
+      </if>
+      <if test="sImei != null" >
+        #{sImei,jdbcType=VARCHAR},
+      </if>
+      <if test="sName != null" >
+        #{sName,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null" >
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="sXValue != null" >
+        #{sXValue,jdbcType=VARCHAR},
+      </if>
+      <if test="sYValue != null" >
+        #{sYValue,jdbcType=VARCHAR},
+      </if>
+      <if test="sInstallDate != null" >
+        #{sInstallDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="sWorkDate != null" >
+        #{sWorkDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="sDescription != null" >
+        #{sDescription,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="entity.UserSensor" >
+    update t_user_sensor
+    <set >
+      <if test="stId != null" >
+        st_id = #{stId,jdbcType=INTEGER},
+      </if>
+      <if test="sImei != null" >
+        s_imei = #{sImei,jdbcType=VARCHAR},
+      </if>
+      <if test="sName != null" >
+        s_name = #{sName,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null" >
+        create_date = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="sXValue != null" >
+        s_x_value = #{sXValue,jdbcType=VARCHAR},
+      </if>
+      <if test="sYValue != null" >
+        s_y_value = #{sYValue,jdbcType=VARCHAR},
+      </if>
+      <if test="sInstallDate != null" >
+        s_install_date = #{sInstallDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="sWorkDate != null" >
+        s_work_date = #{sWorkDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="sDescription != null" >
+        s_description = #{sDescription,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where s_id = #{sId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="entity.UserSensor" >
+    update t_user_sensor
+    set st_id = #{stId,jdbcType=INTEGER},
+      s_imei = #{sImei,jdbcType=VARCHAR},
+      s_name = #{sName,jdbcType=VARCHAR},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
+      s_x_value = #{sXValue,jdbcType=VARCHAR},
+      s_y_value = #{sYValue,jdbcType=VARCHAR},
+      s_install_date = #{sInstallDate,jdbcType=TIMESTAMP},
+      s_work_date = #{sWorkDate,jdbcType=TIMESTAMP},
+      s_description = #{sDescription,jdbcType=VARCHAR}
+    where s_id = #{sId,jdbcType=INTEGER}
+  </update>
+</mapper>

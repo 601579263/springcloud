@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="entity.mapper.ShopMapper" >
+  <resultMap id="BaseResultMap" type="entity.Shop" >
+    <id column="s_id" property="sId" jdbcType="BIGINT" />
+    <result column="s_name" property="sName" jdbcType="VARCHAR" />
+    <result column="s_city" property="sCity" jdbcType="INTEGER" />
+    <result column="s_createtime" property="sCreatetime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    s_id, s_name, s_city, s_createtime
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_shop
+    where s_id = #{sId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from t_shop
+    where s_id = #{sId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="entity.Shop" >
+    insert into t_shop (s_id, s_name, s_city, 
+      s_createtime)
+    values (#{sId,jdbcType=BIGINT}, #{sName,jdbcType=VARCHAR}, #{sCity,jdbcType=INTEGER}, 
+      #{sCreatetime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="entity.Shop" >
+    insert into t_shop
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="sId != null" >
+        s_id,
+      </if>
+      <if test="sName != null" >
+        s_name,
+      </if>
+      <if test="sCity != null" >
+        s_city,
+      </if>
+      <if test="sCreatetime != null" >
+        s_createtime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="sId != null" >
+        #{sId,jdbcType=BIGINT},
+      </if>
+      <if test="sName != null" >
+        #{sName,jdbcType=VARCHAR},
+      </if>
+      <if test="sCity != null" >
+        #{sCity,jdbcType=INTEGER},
+      </if>
+      <if test="sCreatetime != null" >
+        #{sCreatetime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="entity.Shop" >
+    update t_shop
+    <set >
+      <if test="sName != null" >
+        s_name = #{sName,jdbcType=VARCHAR},
+      </if>
+      <if test="sCity != null" >
+        s_city = #{sCity,jdbcType=INTEGER},
+      </if>
+      <if test="sCreatetime != null" >
+        s_createtime = #{sCreatetime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where s_id = #{sId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="entity.Shop" >
+    update t_shop
+    set s_name = #{sName,jdbcType=VARCHAR},
+      s_city = #{sCity,jdbcType=INTEGER},
+      s_createtime = #{sCreatetime,jdbcType=TIMESTAMP}
+    where s_id = #{sId,jdbcType=BIGINT}
+  </update>
+</mapper>

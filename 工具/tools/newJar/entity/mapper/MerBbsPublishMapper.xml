@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="entity.mapper.MerBbsPublishMapper" >
+  <resultMap id="BaseResultMap" type="entity.MerBbsPublish" >
+    <id column="bbs_id" property="bbsId" jdbcType="BIGINT" />
+    <result column="r_id" property="rId" jdbcType="BIGINT" />
+    <result column="mer_name" property="merName" jdbcType="VARCHAR" />
+    <result column="bbs_title" property="bbsTitle" jdbcType="VARCHAR" />
+    <result column="bbs_content" property="bbsContent" jdbcType="VARCHAR" />
+    <result column="bbs_content_image" property="bbsContentImage" jdbcType="VARCHAR" />
+    <result column="bbs_zan_count" property="bbsZanCount" jdbcType="INTEGER" />
+    <result column="bbs_comment_count" property="bbsCommentCount" jdbcType="INTEGER" />
+    <result column="bbs_state" property="bbsState" jdbcType="INTEGER" />
+    <result column="bbs_remark" property="bbsRemark" jdbcType="VARCHAR" />
+    <result column="create_date" property="createDate" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    bbs_id, r_id, mer_name, bbs_title, bbs_content, bbs_content_image, bbs_zan_count, 
+    bbs_comment_count, bbs_state, bbs_remark, create_date
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_mer_bbs_publish
+    where bbs_id = #{bbsId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from t_mer_bbs_publish
+    where bbs_id = #{bbsId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="entity.MerBbsPublish" >
+    insert into t_mer_bbs_publish (bbs_id, r_id, mer_name, 
+      bbs_title, bbs_content, bbs_content_image, 
+      bbs_zan_count, bbs_comment_count, bbs_state, 
+      bbs_remark, create_date)
+    values (#{bbsId,jdbcType=BIGINT}, #{rId,jdbcType=BIGINT}, #{merName,jdbcType=VARCHAR}, 
+      #{bbsTitle,jdbcType=VARCHAR}, #{bbsContent,jdbcType=VARCHAR}, #{bbsContentImage,jdbcType=VARCHAR}, 
+      #{bbsZanCount,jdbcType=INTEGER}, #{bbsCommentCount,jdbcType=INTEGER}, #{bbsState,jdbcType=INTEGER}, 
+      #{bbsRemark,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="entity.MerBbsPublish" >
+    insert into t_mer_bbs_publish
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="bbsId != null" >
+        bbs_id,
+      </if>
+      <if test="rId != null" >
+        r_id,
+      </if>
+      <if test="merName != null" >
+        mer_name,
+      </if>
+      <if test="bbsTitle != null" >
+        bbs_title,
+      </if>
+      <if test="bbsContent != null" >
+        bbs_content,
+      </if>
+      <if test="bbsContentImage != null" >
+        bbs_content_image,
+      </if>
+      <if test="bbsZanCount != null" >
+        bbs_zan_count,
+      </if>
+      <if test="bbsCommentCount != null" >
+        bbs_comment_count,
+      </if>
+      <if test="bbsState != null" >
+        bbs_state,
+      </if>
+      <if test="bbsRemark != null" >
+        bbs_remark,
+      </if>
+      <if test="createDate != null" >
+        create_date,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="bbsId != null" >
+        #{bbsId,jdbcType=BIGINT},
+      </if>
+      <if test="rId != null" >
+        #{rId,jdbcType=BIGINT},
+      </if>
+      <if test="merName != null" >
+        #{merName,jdbcType=VARCHAR},
+      </if>
+      <if test="bbsTitle != null" >
+        #{bbsTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="bbsContent != null" >
+        #{bbsContent,jdbcType=VARCHAR},
+      </if>
+      <if test="bbsContentImage != null" >
+        #{bbsContentImage,jdbcType=VARCHAR},
+      </if>
+      <if test="bbsZanCount != null" >
+        #{bbsZanCount,jdbcType=INTEGER},
+      </if>
+      <if test="bbsCommentCount != null" >
+        #{bbsCommentCount,jdbcType=INTEGER},
+      </if>
+      <if test="bbsState != null" >
+        #{bbsState,jdbcType=INTEGER},
+      </if>
+      <if test="bbsRemark != null" >
+        #{bbsRemark,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null" >
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="entity.MerBbsPublish" >
+    update t_mer_bbs_publish
+    <set >
+      <if test="rId != null" >
+        r_id = #{rId,jdbcType=BIGINT},
+      </if>
+      <if test="merName != null" >
+        mer_name = #{merName,jdbcType=VARCHAR},
+      </if>
+      <if test="bbsTitle != null" >
+        bbs_title = #{bbsTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="bbsContent != null" >
+        bbs_content = #{bbsContent,jdbcType=VARCHAR},
+      </if>
+      <if test="bbsContentImage != null" >
+        bbs_content_image = #{bbsContentImage,jdbcType=VARCHAR},
+      </if>
+      <if test="bbsZanCount != null" >
+        bbs_zan_count = #{bbsZanCount,jdbcType=INTEGER},
+      </if>
+      <if test="bbsCommentCount != null" >
+        bbs_comment_count = #{bbsCommentCount,jdbcType=INTEGER},
+      </if>
+      <if test="bbsState != null" >
+        bbs_state = #{bbsState,jdbcType=INTEGER},
+      </if>
+      <if test="bbsRemark != null" >
+        bbs_remark = #{bbsRemark,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null" >
+        create_date = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where bbs_id = #{bbsId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="entity.MerBbsPublish" >
+    update t_mer_bbs_publish
+    set r_id = #{rId,jdbcType=BIGINT},
+      mer_name = #{merName,jdbcType=VARCHAR},
+      bbs_title = #{bbsTitle,jdbcType=VARCHAR},
+      bbs_content = #{bbsContent,jdbcType=VARCHAR},
+      bbs_content_image = #{bbsContentImage,jdbcType=VARCHAR},
+      bbs_zan_count = #{bbsZanCount,jdbcType=INTEGER},
+      bbs_comment_count = #{bbsCommentCount,jdbcType=INTEGER},
+      bbs_state = #{bbsState,jdbcType=INTEGER},
+      bbs_remark = #{bbsRemark,jdbcType=VARCHAR},
+      create_date = #{createDate,jdbcType=TIMESTAMP}
+    where bbs_id = #{bbsId,jdbcType=BIGINT}
+  </update>
+</mapper>

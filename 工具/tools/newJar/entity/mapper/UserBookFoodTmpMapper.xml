@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="entity.mapper.UserBookFoodTmpMapper" >
+  <resultMap id="BaseResultMap" type="entity.UserBookFoodTmp" >
+    <id column="b_id" property="bId" jdbcType="BIGINT" />
+    <result column="u_id" property="uId" jdbcType="BIGINT" />
+    <result column="r_id" property="rId" jdbcType="BIGINT" />
+    <result column="cb_id" property="cbId" jdbcType="BIGINT" />
+    <result column="cb_name" property="cbName" jdbcType="VARCHAR" />
+    <result column="cb_num" property="cbNum" jdbcType="INTEGER" />
+    <result column="cb_price" property="cbPrice" jdbcType="DOUBLE" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    b_id, u_id, r_id, cb_id, cb_name, cb_num, cb_price
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_user_book_food_tmp
+    where b_id = #{bId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from t_user_book_food_tmp
+    where b_id = #{bId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="entity.UserBookFoodTmp" >
+    insert into t_user_book_food_tmp (b_id, u_id, r_id, cb_id, 
+      cb_name, cb_num, cb_price
+      )
+    values (#{bId,jdbcType=BIGINT}, #{uId,jdbcType=BIGINT}, #{rId,jdbcType=BIGINT}, #{cbId,jdbcType=BIGINT}, 
+      #{cbName,jdbcType=VARCHAR}, #{cbNum,jdbcType=INTEGER}, #{cbPrice,jdbcType=DOUBLE}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="entity.UserBookFoodTmp" >
+    insert into t_user_book_food_tmp
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="bId != null" >
+        b_id,
+      </if>
+      <if test="uId != null" >
+        u_id,
+      </if>
+      <if test="rId != null" >
+        r_id,
+      </if>
+      <if test="cbId != null" >
+        cb_id,
+      </if>
+      <if test="cbName != null" >
+        cb_name,
+      </if>
+      <if test="cbNum != null" >
+        cb_num,
+      </if>
+      <if test="cbPrice != null" >
+        cb_price,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="bId != null" >
+        #{bId,jdbcType=BIGINT},
+      </if>
+      <if test="uId != null" >
+        #{uId,jdbcType=BIGINT},
+      </if>
+      <if test="rId != null" >
+        #{rId,jdbcType=BIGINT},
+      </if>
+      <if test="cbId != null" >
+        #{cbId,jdbcType=BIGINT},
+      </if>
+      <if test="cbName != null" >
+        #{cbName,jdbcType=VARCHAR},
+      </if>
+      <if test="cbNum != null" >
+        #{cbNum,jdbcType=INTEGER},
+      </if>
+      <if test="cbPrice != null" >
+        #{cbPrice,jdbcType=DOUBLE},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="entity.UserBookFoodTmp" >
+    update t_user_book_food_tmp
+    <set >
+      <if test="uId != null" >
+        u_id = #{uId,jdbcType=BIGINT},
+      </if>
+      <if test="rId != null" >
+        r_id = #{rId,jdbcType=BIGINT},
+      </if>
+      <if test="cbId != null" >
+        cb_id = #{cbId,jdbcType=BIGINT},
+      </if>
+      <if test="cbName != null" >
+        cb_name = #{cbName,jdbcType=VARCHAR},
+      </if>
+      <if test="cbNum != null" >
+        cb_num = #{cbNum,jdbcType=INTEGER},
+      </if>
+      <if test="cbPrice != null" >
+        cb_price = #{cbPrice,jdbcType=DOUBLE},
+      </if>
+    </set>
+    where b_id = #{bId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="entity.UserBookFoodTmp" >
+    update t_user_book_food_tmp
+    set u_id = #{uId,jdbcType=BIGINT},
+      r_id = #{rId,jdbcType=BIGINT},
+      cb_id = #{cbId,jdbcType=BIGINT},
+      cb_name = #{cbName,jdbcType=VARCHAR},
+      cb_num = #{cbNum,jdbcType=INTEGER},
+      cb_price = #{cbPrice,jdbcType=DOUBLE}
+    where b_id = #{bId,jdbcType=BIGINT}
+  </update>
+</mapper>

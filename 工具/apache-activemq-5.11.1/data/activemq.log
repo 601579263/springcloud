@@ -1,0 +1,300 @@
+2017-09-26 22:18:04,858 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@5e590c54: startup date [Tue Sep 26 22:18:04 CST 2017]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2017-09-26 22:18:06,688 | INFO  | PListStore:[F:\每特教育\教案\课程\0019-每特教育(蚂蚁课堂)-ActiveMQ\资料\apache-activemq-5.11.1-bin\apache-activemq-5.11.1\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2017-09-26 22:18:06,733 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[F:\每特教育\教案\课程\0019-每特教育(蚂蚁课堂)-ActiveMQ\资料\apache-activemq-5.11.1-bin\apache-activemq-5.11.1\bin\win64\..\..\data\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2017-09-26 22:18:07,235 | INFO  | Apache ActiveMQ 5.11.1 (localhost, ID:2012-20160701XG-62399-1506435487069-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2017-09-26 22:18:07,270 | INFO  | Listening for connections at: tcp://2012-20160701XG:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2017-09-26 22:18:07,273 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2017-09-26 22:18:07,283 | INFO  | Listening for connections at: amqp://2012-20160701XG:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2017-09-26 22:18:07,287 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2017-09-26 22:18:07,302 | INFO  | Listening for connections at: stomp://2012-20160701XG:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2017-09-26 22:18:07,305 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2017-09-26 22:18:07,315 | INFO  | Listening for connections at: mqtt://2012-20160701XG:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2017-09-26 22:18:07,318 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2017-09-26 22:18:07,782 | INFO  | Listening for connections at ws://2012-20160701XG:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2017-09-26 22:18:07,783 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2017-09-26 22:18:07,785 | INFO  | Apache ActiveMQ 5.11.1 (localhost, ID:2012-20160701XG-62399-1506435487069-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2017-09-26 22:18:07,788 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2017-09-26 22:18:07,798 | WARN  | Store limit is 102400 mb (current store usage is 0 mb). The data directory: F:\每特教育\教案\课程\0019-每特教育(蚂蚁课堂)-ActiveMQ\资料\apache-activemq-5.11.1-bin\apache-activemq-5.11.1\bin\win64\..\..\data\kahadb only has 37532 mb of usable space - resetting to maximum available disk space: 37532 mb | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2017-09-26 22:18:07,806 | WARN  | Temporary Store limit is 51200 mb, whilst the temporary data directory: F:\每特教育\教案\课程\0019-每特教育(蚂蚁课堂)-ActiveMQ\资料\apache-activemq-5.11.1-bin\apache-activemq-5.11.1\bin\win64\..\..\data\localhost\tmp_storage only has 37532 mb of usable space - resetting to maximum available 37532 mb. | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2017-09-26 22:18:08,496 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2017-09-26 22:18:08,609 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
+2017-09-26 22:18:09,339 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | WrapperSimpleAppMain
+2017-09-26 22:46:15,956 | INFO  | Connector vm://localhost started | org.apache.activemq.broker.TransportConnector | qtp1702498650-47
+2017-09-26 22:54:08,008 | WARN  | Transport Connection to: tcp://127.0.0.1:62936 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62936@61616
+2017-09-26 22:57:56,570 | WARN  | Transport Connection to: tcp://127.0.0.1:62977 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62977@61616
+2017-09-26 22:57:57,705 | WARN  | Transport Connection to: tcp://127.0.0.1:62986 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62986@61616
+2017-09-26 23:02:49,136 | WARN  | Transport Connection to: tcp://127.0.0.1:63080 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:63080@61616
+2017-09-26 23:02:51,400 | WARN  | Transport Connection to: tcp://127.0.0.1:63073 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:63073@61616
+2017-09-26 23:03:53,542 | WARN  | Transport Connection to: tcp://127.0.0.1:63092 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:63092@61616
+2017-09-26 23:09:11,088 | WARN  | Transport Connection to: tcp://127.0.0.1:63251 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:63251@61616
+2017-09-26 23:10:41,353 | WARN  | Transport Connection to: tcp://127.0.0.1:63273 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:63273@61616
+2017-09-26 23:10:54,073 | WARN  | Transport Connection to: tcp://127.0.0.1:63290 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:63290@61616
+2017-09-26 23:11:38,223 | WARN  | Transport Connection to: tcp://127.0.0.1:63297 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:63297@61616
+2017-09-26 23:29:18,813 | WARN  | Transport Connection to: tcp://127.0.0.1:63441 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:63441@61616
+2017-09-26 23:29:20,596 | WARN  | Transport Connection to: tcp://127.0.0.1:63438 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:63438@61616
+2017-09-26 23:58:01,100 | WARN  | Transport Connection to: tcp://127.0.0.1:64181 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:64181@61616
+2018-06-09 14:45:39,306 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@3aa3defc: startup date [Sat Jun 09 14:45:39 CST 2018]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2018-06-09 14:45:40,661 | INFO  | PListStore:[D:\新建文件夹 (3)\每特教育(蚂蚁课堂)-ActiveMQ\资料\apache-activemq-5.11.1-bin\apache-activemq-5.11.1\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2018-06-09 14:45:40,683 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\新建文件夹 (3)\每特教育(蚂蚁课堂)-ActiveMQ\资料\apache-activemq-5.11.1-bin\apache-activemq-5.11.1\bin\win64\..\..\data\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-06-09 14:45:41,076 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-06-09 14:45:41,154 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-06-09 14:45:41,224 | INFO  | Recovery replayed 1057 operations from the journal in 0.117 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-06-09 14:45:41,402 | INFO  | Apache ActiveMQ 5.11.1 (localhost, ID:DESKTOP-STU9M27-63309-1528526741244-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-06-09 14:45:41,485 | INFO  | Listening for connections at: tcp://DESKTOP-STU9M27:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-06-09 14:45:41,485 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-09 14:45:41,490 | INFO  | Listening for connections at: amqp://DESKTOP-STU9M27:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-06-09 14:45:41,491 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-09 14:45:41,495 | INFO  | Listening for connections at: stomp://DESKTOP-STU9M27:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-06-09 14:45:41,495 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-09 14:45:41,499 | INFO  | Listening for connections at: mqtt://DESKTOP-STU9M27:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-06-09 14:45:41,500 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-09 14:45:41,626 | INFO  | Listening for connections at ws://DESKTOP-STU9M27:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2018-06-09 14:45:41,626 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-09 14:45:41,627 | INFO  | Apache ActiveMQ 5.11.1 (localhost, ID:DESKTOP-STU9M27-63309-1528526741244-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-06-09 14:45:41,627 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-06-09 14:45:41,928 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2018-06-09 14:45:41,980 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
+2018-06-09 14:45:42,483 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | WrapperSimpleAppMain
+2018-06-09 14:46:42,006 | WARN  |  | org.eclipse.jetty.servlet.ServletHandler | qtp1740522451-55
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.IllegalArgumentException: No JMSDestination parameter specified
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:965)[spring-webmvc-3.2.11.RELEASE.jar:3.2.11.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:855)[spring-webmvc-3.2.11.RELEASE.jar:3.2.11.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:595)[geronimo-servlet_3.0_spec-1.0.jar:1.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:829)[spring-webmvc-3.2.11.RELEASE.jar:3.2.11.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668)[geronimo-servlet_3.0_spec-1.0.jar:1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1496)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.apache.activemq.web.AuditFilter.doFilter(AuditFilter.java:59)[activemq-web-5.11.1.jar:5.11.1]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1484)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)[spring-web-3.2.11.RELEASE.jar:3.2.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:106)[spring-web-3.2.11.RELEASE.jar:3.2.11.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1484)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.apache.activemq.web.filter.ApplicationContextFilter.doFilter(ApplicationContextFilter.java:102)[file:/D:/新建文件夹%20(3)/每特教育(蚂蚁课堂)-ActiveMQ/资料/apache-activemq-5.11.1-bin/apache-activemq-5.11.1/webapps/admin/WEB-INF/classes/:]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1476)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:501)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:522)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:522)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:982)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1043)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:865)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at java.lang.Thread.run(Thread.java:745)[:1.7.0_71]
+2018-06-09 14:46:42,038 | WARN  | /admin/createDestination.action | org.eclipse.jetty.servlet.ServletHandler | qtp1740522451-55
+java.lang.IllegalArgumentException: No JMSDestination parameter specified
+	at org.apache.activemq.web.DestinationFacade.getValidDestination(DestinationFacade.java:112)[activemq-web-5.11.1.jar:5.11.1]
+	at org.apache.activemq.web.DestinationFacade.addDestination(DestinationFacade.java:56)[activemq-web-5.11.1.jar:5.11.1]
+	at org.apache.activemq.web.controller.CreateDestination.handleRequest(CreateDestination.java:38)[file:/D:/新建文件夹%20(3)/每特教育(蚂蚁课堂)-ActiveMQ/资料/apache-activemq-5.11.1-bin/apache-activemq-5.11.1/webapps/admin/WEB-INF/classes/:]
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)[spring-webmvc-3.2.11.RELEASE.jar:3.2.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:919)[spring-webmvc-3.2.11.RELEASE.jar:3.2.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:851)[spring-webmvc-3.2.11.RELEASE.jar:3.2.11.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:953)[spring-webmvc-3.2.11.RELEASE.jar:3.2.11.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:855)[spring-webmvc-3.2.11.RELEASE.jar:3.2.11.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:595)[geronimo-servlet_3.0_spec-1.0.jar:1.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:829)[spring-webmvc-3.2.11.RELEASE.jar:3.2.11.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668)[geronimo-servlet_3.0_spec-1.0.jar:1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1496)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.apache.activemq.web.AuditFilter.doFilter(AuditFilter.java:59)[activemq-web-5.11.1.jar:5.11.1]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1484)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)[spring-web-3.2.11.RELEASE.jar:3.2.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:106)[spring-web-3.2.11.RELEASE.jar:3.2.11.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1484)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.apache.activemq.web.filter.ApplicationContextFilter.doFilter(ApplicationContextFilter.java:102)[file:/D:/新建文件夹%20(3)/每特教育(蚂蚁课堂)-ActiveMQ/资料/apache-activemq-5.11.1-bin/apache-activemq-5.11.1/webapps/admin/WEB-INF/classes/:]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1476)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:501)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:522)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:522)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:982)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1043)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:865)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)[jetty-all-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at java.lang.Thread.run(Thread.java:745)[:1.7.0_71]
+2018-06-10 15:23:38,553 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@328a415: startup date [Sun Jun 10 15:23:38 CST 2018]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2018-06-10 15:23:42,046 | INFO  | PListStore:[D:\新建文件夹 (3)\每特教育(蚂蚁课堂)-ActiveMQ\资料\apache-activemq-5.11.1-bin\apache-activemq-5.11.1\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2018-06-10 15:23:42,079 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\新建文件夹 (3)\每特教育(蚂蚁课堂)-ActiveMQ\资料\apache-activemq-5.11.1-bin\apache-activemq-5.11.1\bin\win64\..\..\data\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-06-10 15:23:42,666 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-06-10 15:23:42,857 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-06-10 15:23:42,874 | INFO  | Recovery replayed 35 operations from the journal in 0.162 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-06-10 15:23:43,116 | INFO  | Apache ActiveMQ 5.11.1 (localhost, ID:DESKTOP-STU9M27-51851-1528615422913-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-06-10 15:23:43,249 | INFO  | Listening for connections at: tcp://DESKTOP-STU9M27:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-06-10 15:23:43,249 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-10 15:23:43,260 | INFO  | Listening for connections at: amqp://DESKTOP-STU9M27:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-06-10 15:23:43,260 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-10 15:23:43,266 | INFO  | Listening for connections at: stomp://DESKTOP-STU9M27:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-06-10 15:23:43,268 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-10 15:23:43,274 | INFO  | Listening for connections at: mqtt://DESKTOP-STU9M27:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-06-10 15:23:43,276 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-10 15:23:43,561 | INFO  | Listening for connections at ws://DESKTOP-STU9M27:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2018-06-10 15:23:43,562 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-10 15:23:43,565 | INFO  | Apache ActiveMQ 5.11.1 (localhost, ID:DESKTOP-STU9M27-51851-1528615422913-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-06-10 15:23:43,565 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-06-10 15:23:45,024 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2018-06-10 15:23:45,240 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
+2018-06-10 15:23:45,901 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | WrapperSimpleAppMain
+2018-06-13 14:00:45,574 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@286797ae: startup date [Wed Jun 13 14:00:45 CST 2018]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2018-06-13 14:00:47,039 | INFO  | PListStore:[D:\新建文件夹 (3)\每特教育(蚂蚁课堂)-ActiveMQ\资料\apache-activemq-5.11.1-bin\apache-activemq-5.11.1\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2018-06-13 14:00:47,064 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\新建文件夹 (3)\每特教育(蚂蚁课堂)-ActiveMQ\资料\apache-activemq-5.11.1-bin\apache-activemq-5.11.1\bin\win64\..\..\data\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-06-13 14:00:47,736 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-06-13 14:00:47,828 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-06-13 14:00:47,865 | INFO  | Recovery replayed 503 operations from the journal in 0.093 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-06-13 14:00:48,066 | INFO  | Apache ActiveMQ 5.11.1 (localhost, ID:DESKTOP-STU9M27-56671-1528869647885-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-06-13 14:00:48,190 | INFO  | Listening for connections at: tcp://DESKTOP-STU9M27:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-06-13 14:00:48,191 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-13 14:00:48,195 | INFO  | Listening for connections at: amqp://DESKTOP-STU9M27:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-06-13 14:00:48,196 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-13 14:00:48,201 | INFO  | Listening for connections at: stomp://DESKTOP-STU9M27:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-06-13 14:00:48,202 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-13 14:00:48,210 | INFO  | Listening for connections at: mqtt://DESKTOP-STU9M27:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-06-13 14:00:48,210 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-13 14:00:48,435 | INFO  | Listening for connections at ws://DESKTOP-STU9M27:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2018-06-13 14:00:48,436 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-13 14:00:48,437 | INFO  | Apache ActiveMQ 5.11.1 (localhost, ID:DESKTOP-STU9M27-56671-1528869647885-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-06-13 14:00:48,437 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-06-13 14:00:49,386 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2018-06-13 14:00:49,507 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
+2018-06-13 14:00:50,025 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | WrapperSimpleAppMain
+2018-06-16 18:32:09,098 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@5c849077: startup date [Sat Jun 16 18:32:09 CST 2018]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2018-06-16 18:32:10,090 | INFO  | PListStore:[D:\新建文件夹 (3)\每特教育(蚂蚁课堂)-ActiveMQ\资料\apache-activemq-5.11.1-bin\apache-activemq-5.11.1\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2018-06-16 18:32:10,116 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\新建文件夹 (3)\每特教育(蚂蚁课堂)-ActiveMQ\资料\apache-activemq-5.11.1-bin\apache-activemq-5.11.1\bin\win64\..\..\data\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-06-16 18:32:10,569 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-06-16 18:32:10,761 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-06-16 18:32:10,801 | INFO  | Recovery replayed 355 operations from the journal in 0.145 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-06-16 18:32:11,024 | INFO  | Apache ActiveMQ 5.11.1 (localhost, ID:DESKTOP-STU9M27-52503-1529145130829-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-06-16 18:32:11,317 | INFO  | Listening for connections at: tcp://DESKTOP-STU9M27:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-06-16 18:32:11,317 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-16 18:32:11,324 | INFO  | Listening for connections at: amqp://DESKTOP-STU9M27:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-06-16 18:32:11,325 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-16 18:32:11,331 | INFO  | Listening for connections at: stomp://DESKTOP-STU9M27:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-06-16 18:32:11,332 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-16 18:32:11,340 | INFO  | Listening for connections at: mqtt://DESKTOP-STU9M27:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-06-16 18:32:11,340 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-16 18:32:11,471 | INFO  | Listening for connections at ws://DESKTOP-STU9M27:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2018-06-16 18:32:11,471 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-16 18:32:11,473 | INFO  | Apache ActiveMQ 5.11.1 (localhost, ID:DESKTOP-STU9M27-52503-1529145130829-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-06-16 18:32:11,473 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-06-16 18:32:11,774 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2018-06-16 18:32:11,826 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
+2018-06-16 18:32:12,285 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | WrapperSimpleAppMain
+2018-06-17 17:22:35,124 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@5c849077: startup date [Sun Jun 17 17:22:35 CST 2018]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2018-06-17 17:22:36,223 | INFO  | PListStore:[D:\新建文件夹 (3)\每特教育(蚂蚁课堂)-ActiveMQ\资料\apache-activemq-5.11.1-bin\apache-activemq-5.11.1\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2018-06-17 17:22:36,252 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\新建文件夹 (3)\每特教育(蚂蚁课堂)-ActiveMQ\资料\apache-activemq-5.11.1-bin\apache-activemq-5.11.1\bin\win64\..\..\data\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-06-17 17:22:37,077 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-06-17 17:22:37,631 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-06-17 17:22:37,848 | INFO  | Recovery replayed 1649 operations from the journal in 0.62 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-06-17 17:22:38,151 | INFO  | Apache ActiveMQ 5.11.1 (localhost, ID:DESKTOP-STU9M27-61868-1529227357972-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-06-17 17:22:38,359 | INFO  | Listening for connections at: tcp://DESKTOP-STU9M27:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-06-17 17:22:38,360 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-17 17:22:38,366 | INFO  | Listening for connections at: amqp://DESKTOP-STU9M27:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-06-17 17:22:38,367 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-17 17:22:38,373 | INFO  | Listening for connections at: stomp://DESKTOP-STU9M27:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-06-17 17:22:38,373 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-17 17:22:38,384 | INFO  | Listening for connections at: mqtt://DESKTOP-STU9M27:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-06-17 17:22:38,384 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-17 17:22:38,795 | INFO  | Listening for connections at ws://DESKTOP-STU9M27:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2018-06-17 17:22:38,795 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-17 17:22:38,797 | INFO  | Apache ActiveMQ 5.11.1 (localhost, ID:DESKTOP-STU9M27-61868-1529227357972-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-06-17 17:22:38,797 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-06-17 17:22:39,712 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2018-06-17 17:22:39,948 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
+2018-06-17 17:22:40,940 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | WrapperSimpleAppMain
+2018-06-17 18:03:59,863 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@612c6051: startup date [Sun Jun 17 18:03:59 CST 2018]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2018-06-17 18:04:01,627 | INFO  | PListStore:[D:\新建文件夹 (3)\每特教育(蚂蚁课堂)-ActiveMQ\资料\apache-activemq-5.11.1-bin\apache-activemq-5.11.1\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2018-06-17 18:04:01,658 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\新建文件夹 (3)\每特教育(蚂蚁课堂)-ActiveMQ\资料\apache-activemq-5.11.1-bin\apache-activemq-5.11.1\bin\win64\..\..\data\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-06-17 18:04:02,388 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-06-17 18:04:02,442 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-06-17 18:04:02,493 | INFO  | Recovery replayed 492 operations from the journal in 0.089 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-06-17 18:04:02,651 | INFO  | Apache ActiveMQ 5.11.1 (localhost, ID:DESKTOP-STU9M27-50579-1529229842521-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-06-17 18:04:02,749 | INFO  | Listening for connections at: tcp://DESKTOP-STU9M27:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-06-17 18:04:02,750 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-17 18:04:02,760 | INFO  | Listening for connections at: amqp://DESKTOP-STU9M27:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-06-17 18:04:02,761 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-17 18:04:02,770 | INFO  | Listening for connections at: stomp://DESKTOP-STU9M27:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-06-17 18:04:02,770 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-17 18:04:02,776 | INFO  | Listening for connections at: mqtt://DESKTOP-STU9M27:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-06-17 18:04:02,776 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-17 18:04:02,916 | INFO  | Listening for connections at ws://DESKTOP-STU9M27:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2018-06-17 18:04:02,916 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-06-17 18:04:02,918 | INFO  | Apache ActiveMQ 5.11.1 (localhost, ID:DESKTOP-STU9M27-50579-1529229842521-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-06-17 18:04:02,918 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-06-17 18:04:03,326 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2018-06-17 18:04:03,390 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
+2018-06-17 18:04:04,072 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | WrapperSimpleAppMain
+2018-07-02 18:28:30,552 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@2917353b: startup date [Mon Jul 02 18:28:30 CST 2018]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2018-07-02 18:28:33,025 | INFO  | PListStore:[D:\新建文件夹 (3)\springcloud整合小项目\工具\apache-activemq-5.11.1\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2018-07-02 18:28:33,105 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\新建文件夹 (3)\springcloud整合小项目\工具\apache-activemq-5.11.1\bin\win64\..\..\data\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-07-02 18:28:34,185 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-07-02 18:28:34,264 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-07-02 18:28:34,326 | INFO  | Recovery replayed 699 operations from the journal in 0.119 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-07-02 18:28:34,564 | INFO  | Apache ActiveMQ 5.11.1 (localhost, ID:DESKTOP-STU9M27-53739-1530527314407-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-07-02 18:28:34,819 | INFO  | Listening for connections at: tcp://DESKTOP-STU9M27:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-07-02 18:28:34,819 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-07-02 18:28:34,825 | INFO  | Listening for connections at: amqp://DESKTOP-STU9M27:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-07-02 18:28:34,826 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-07-02 18:28:34,830 | INFO  | Listening for connections at: stomp://DESKTOP-STU9M27:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-07-02 18:28:34,831 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-07-02 18:28:34,844 | INFO  | Listening for connections at: mqtt://DESKTOP-STU9M27:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-07-02 18:28:34,845 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-07-02 18:28:35,112 | INFO  | Listening for connections at ws://DESKTOP-STU9M27:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2018-07-02 18:28:35,113 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-07-02 18:28:35,114 | INFO  | Apache ActiveMQ 5.11.1 (localhost, ID:DESKTOP-STU9M27-53739-1530527314407-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-07-02 18:28:35,114 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-07-02 18:28:36,001 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2018-07-02 18:28:36,229 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
+2018-07-02 18:28:37,261 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | WrapperSimpleAppMain
+2018-07-07 13:03:40,078 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@5c849077: startup date [Sat Jul 07 13:03:40 CST 2018]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2018-07-07 13:03:43,032 | INFO  | PListStore:[D:\新建文件夹 (3)\springcloud整合小项目\工具\apache-activemq-5.11.1\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2018-07-07 13:03:43,142 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\新建文件夹 (3)\springcloud整合小项目\工具\apache-activemq-5.11.1\bin\win64\..\..\data\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-07-07 13:03:43,819 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-07-07 13:03:43,973 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-07-07 13:03:44,005 | INFO  | Recovery replayed 147 operations from the journal in 0.139 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2018-07-07 13:03:44,278 | INFO  | Apache ActiveMQ 5.11.1 (localhost, ID:DESKTOP-STU9M27-55989-1530939824053-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-07-07 13:03:44,480 | INFO  | Listening for connections at: tcp://DESKTOP-STU9M27:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-07-07 13:03:44,481 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-07-07 13:03:44,489 | INFO  | Listening for connections at: amqp://DESKTOP-STU9M27:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-07-07 13:03:44,490 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-07-07 13:03:44,495 | INFO  | Listening for connections at: stomp://DESKTOP-STU9M27:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-07-07 13:03:44,496 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-07-07 13:03:44,501 | INFO  | Listening for connections at: mqtt://DESKTOP-STU9M27:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2018-07-07 13:03:44,502 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-07-07 13:03:44,944 | INFO  | Listening for connections at ws://DESKTOP-STU9M27:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2018-07-07 13:03:44,945 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2018-07-07 13:03:44,950 | INFO  | Apache ActiveMQ 5.11.1 (localhost, ID:DESKTOP-STU9M27-55989-1530939824053-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-07-07 13:03:44,951 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2018-07-07 13:03:46,298 | INFO  | ActiveMQ WebConsole available at http://0.0.0.0:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2018-07-07 13:03:46,548 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
+2018-07-07 13:03:47,988 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | WrapperSimpleAppMain
+2018-07-07 14:16:21,320 | WARN  | Transport Connection to: tcp://127.0.0.1:56507 failed: java.net.SocketException: Connection reset by peer: socket write error | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ InactivityMonitor Worker

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="entity.mapper.OrderMapper" >
+  <resultMap id="BaseResultMap" type="entity.Order" >
+    <id column="order_id" property="orderId" jdbcType="VARCHAR" />
+    <result column="order_name" property="orderName" jdbcType="VARCHAR" />
+    <result column="order_type" property="orderType" jdbcType="INTEGER" />
+    <result column="order_source" property="orderSource" jdbcType="INTEGER" />
+    <result column="book_id" property="bookId" jdbcType="VARCHAR" />
+    <result column="b_price" property="bPrice" jdbcType="DOUBLE" />
+    <result column="state" property="state" jdbcType="INTEGER" />
+    <result column="u_id" property="uId" jdbcType="VARCHAR" />
+    <result column="is_use_coupon" property="isUseCoupon" jdbcType="INTEGER" />
+    <result column="user_coupon_id" property="userCouponId" jdbcType="VARCHAR" />
+    <result column="coupon_price" property="couponPrice" jdbcType="INTEGER" />
+    <result column="is_use_jifen" property="isUseJifen" jdbcType="INTEGER" />
+    <result column="use_jifen" property="useJifen" jdbcType="INTEGER" />
+    <result column="order_content" property="orderContent" jdbcType="VARCHAR" />
+    <result column="order_price" property="orderPrice" jdbcType="DOUBLE" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="pay_time" property="payTime" jdbcType="TIMESTAMP" />
+    <result column="effictive_date" property="effictiveDate" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    order_id, order_name, order_type, order_source, book_id, b_price, state, u_id, is_use_coupon, 
+    user_coupon_id, coupon_price, is_use_jifen, use_jifen, order_content, order_price, 
+    create_time, pay_time, effictive_date
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_order
+    where order_id = #{orderId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from t_order
+    where order_id = #{orderId,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="entity.Order" >
+    insert into t_order (order_id, order_name, order_type, 
+      order_source, book_id, b_price, 
+      state, u_id, is_use_coupon, 
+      user_coupon_id, coupon_price, is_use_jifen, 
+      use_jifen, order_content, order_price, 
+      create_time, pay_time, effictive_date
+      )
+    values (#{orderId,jdbcType=VARCHAR}, #{orderName,jdbcType=VARCHAR}, #{orderType,jdbcType=INTEGER}, 
+      #{orderSource,jdbcType=INTEGER}, #{bookId,jdbcType=VARCHAR}, #{bPrice,jdbcType=DOUBLE}, 
+      #{state,jdbcType=INTEGER}, #{uId,jdbcType=VARCHAR}, #{isUseCoupon,jdbcType=INTEGER}, 
+      #{userCouponId,jdbcType=VARCHAR}, #{couponPrice,jdbcType=INTEGER}, #{isUseJifen,jdbcType=INTEGER}, 
+      #{useJifen,jdbcType=INTEGER}, #{orderContent,jdbcType=VARCHAR}, #{orderPrice,jdbcType=DOUBLE}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{payTime,jdbcType=TIMESTAMP}, #{effictiveDate,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="entity.Order" >
+    insert into t_order
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="orderId != null" >
+        order_id,
+      </if>
+      <if test="orderName != null" >
+        order_name,
+      </if>
+      <if test="orderType != null" >
+        order_type,
+      </if>
+      <if test="orderSource != null" >
+        order_source,
+      </if>
+      <if test="bookId != null" >
+        book_id,
+      </if>
+      <if test="bPrice != null" >
+        b_price,
+      </if>
+      <if test="state != null" >
+        state,
+      </if>
+      <if test="uId != null" >
+        u_id,
+      </if>
+      <if test="isUseCoupon != null" >
+        is_use_coupon,
+      </if>
+      <if test="userCouponId != null" >
+        user_coupon_id,
+      </if>
+      <if test="couponPrice != null" >
+        coupon_price,
+      </if>
+      <if test="isUseJifen != null" >
+        is_use_jifen,
+      </if>
+      <if test="useJifen != null" >
+        use_jifen,
+      </if>
+      <if test="orderContent != null" >
+        order_content,
+      </if>
+      <if test="orderPrice != null" >
+        order_price,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="payTime != null" >
+        pay_time,
+      </if>
+      <if test="effictiveDate != null" >
+        effictive_date,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="orderId != null" >
+        #{orderId,jdbcType=VARCHAR},
+      </if>
+      <if test="orderName != null" >
+        #{orderName,jdbcType=VARCHAR},
+      </if>
+      <if test="orderType != null" >
+        #{orderType,jdbcType=INTEGER},
+      </if>
+      <if test="orderSource != null" >
+        #{orderSource,jdbcType=INTEGER},
+      </if>
+      <if test="bookId != null" >
+        #{bookId,jdbcType=VARCHAR},
+      </if>
+      <if test="bPrice != null" >
+        #{bPrice,jdbcType=DOUBLE},
+      </if>
+      <if test="state != null" >
+        #{state,jdbcType=INTEGER},
+      </if>
+      <if test="uId != null" >
+        #{uId,jdbcType=VARCHAR},
+      </if>
+      <if test="isUseCoupon != null" >
+        #{isUseCoupon,jdbcType=INTEGER},
+      </if>
+      <if test="userCouponId != null" >
+        #{userCouponId,jdbcType=VARCHAR},
+      </if>
+      <if test="couponPrice != null" >
+        #{couponPrice,jdbcType=INTEGER},
+      </if>
+      <if test="isUseJifen != null" >
+        #{isUseJifen,jdbcType=INTEGER},
+      </if>
+      <if test="useJifen != null" >
+        #{useJifen,jdbcType=INTEGER},
+      </if>
+      <if test="orderContent != null" >
+        #{orderContent,jdbcType=VARCHAR},
+      </if>
+      <if test="orderPrice != null" >
+        #{orderPrice,jdbcType=DOUBLE},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="payTime != null" >
+        #{payTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="effictiveDate != null" >
+        #{effictiveDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="entity.Order" >
+    update t_order
+    <set >
+      <if test="orderName != null" >
+        order_name = #{orderName,jdbcType=VARCHAR},
+      </if>
+      <if test="orderType != null" >
+        order_type = #{orderType,jdbcType=INTEGER},
+      </if>
+      <if test="orderSource != null" >
+        order_source = #{orderSource,jdbcType=INTEGER},
+      </if>
+      <if test="bookId != null" >
+        book_id = #{bookId,jdbcType=VARCHAR},
+      </if>
+      <if test="bPrice != null" >
+        b_price = #{bPrice,jdbcType=DOUBLE},
+      </if>
+      <if test="state != null" >
+        state = #{state,jdbcType=INTEGER},
+      </if>
+      <if test="uId != null" >
+        u_id = #{uId,jdbcType=VARCHAR},
+      </if>
+      <if test="isUseCoupon != null" >
+        is_use_coupon = #{isUseCoupon,jdbcType=INTEGER},
+      </if>
+      <if test="userCouponId != null" >
+        user_coupon_id = #{userCouponId,jdbcType=VARCHAR},
+      </if>
+      <if test="couponPrice != null" >
+        coupon_price = #{couponPrice,jdbcType=INTEGER},
+      </if>
+      <if test="isUseJifen != null" >
+        is_use_jifen = #{isUseJifen,jdbcType=INTEGER},
+      </if>
+      <if test="useJifen != null" >
+        use_jifen = #{useJifen,jdbcType=INTEGER},
+      </if>
+      <if test="orderContent != null" >
+        order_content = #{orderContent,jdbcType=VARCHAR},
+      </if>
+      <if test="orderPrice != null" >
+        order_price = #{orderPrice,jdbcType=DOUBLE},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="payTime != null" >
+        pay_time = #{payTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="effictiveDate != null" >
+        effictive_date = #{effictiveDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where order_id = #{orderId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="entity.Order" >
+    update t_order
+    set order_name = #{orderName,jdbcType=VARCHAR},
+      order_type = #{orderType,jdbcType=INTEGER},
+      order_source = #{orderSource,jdbcType=INTEGER},
+      book_id = #{bookId,jdbcType=VARCHAR},
+      b_price = #{bPrice,jdbcType=DOUBLE},
+      state = #{state,jdbcType=INTEGER},
+      u_id = #{uId,jdbcType=VARCHAR},
+      is_use_coupon = #{isUseCoupon,jdbcType=INTEGER},
+      user_coupon_id = #{userCouponId,jdbcType=VARCHAR},
+      coupon_price = #{couponPrice,jdbcType=INTEGER},
+      is_use_jifen = #{isUseJifen,jdbcType=INTEGER},
+      use_jifen = #{useJifen,jdbcType=INTEGER},
+      order_content = #{orderContent,jdbcType=VARCHAR},
+      order_price = #{orderPrice,jdbcType=DOUBLE},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      pay_time = #{payTime,jdbcType=TIMESTAMP},
+      effictive_date = #{effictiveDate,jdbcType=TIMESTAMP}
+    where order_id = #{orderId,jdbcType=VARCHAR}
+  </update>
+</mapper>

@@ -1,0 +1,115 @@
+#tomcat 设置
+<Connector URIEncoding="UTF-8" connectionTimeout="20000" port="8080" protocol="org.apache.coyote.http11.Http11NioProtocol" redirectPort="8443"/>
+
+生成keystore
+keytool -v -genkey -alias tomcat -keyalg RSA -keystore d:/tomcat.keystore  -validity 36500
+
+<Connector port="8443" protocol="HTTP/1.1" SSLEnabled="true" 
+     maxThreads="150" scheme="https" secure="true" 
+     clientAuth="false" keystoreFile="tomcat.keystore" 
+     keystorePass="tian0112" sslProtocol="TLS" /> 
+
+# 配置虚拟目录
+tomcat路径\conf\Catalina\localhost\localManage.xml
+根据配置文件里的内容创建目录
+ 
+ 
+ 
+--根据数据库表批量生成Mybatis文件 *Mapper.xml *Mapper.java *.java
+java -jar mybatis-generator-core-1.3.2.jar -configfile conf.xml -overwrite
+
+--root操作
+create database hdtravel;
+use hdtravel;
+--创建用户
+create user busidev@127.0.0.1 identified by '111111';
+create user busidev@localhost identified by '111111';
+create user busidev@'%' identified by '111111';
+grant all privileges on *.* to busidev@127.0.0.1 identified by '111111';
+grant all privileges on *.* to busidev@localhost identified by '111111';
+grant all privileges on *.* to busidev@'%' identified by '111111';
+
+flush privileges;
+连接：mysql -h主机地址 -u用户名 －p用户密码 （注:u与root可以不用加空格，其它也一样） 
+mysql -uroot -p -hlocalhost -P6789
+断开：exit （回车） 
+ netstat -nalt 
+ 
+
+显示数据库：show databases; 
+显示数据表：show tables; 
+显示表结构：describe 表名; 
+
+
+创建库：create database 库名; 
+删除库：drop database 库名; 
+使用库：use 库名; 
+
+
+创建表：create table 表名 (字段设定列表); 
+删除表：drop table 表名; 
+修改表：alter table t1 rename t2 
+查询表：select * from 表名; 
+清空表：delete from 表名; 
+备份表: mysqlbinmysqldump -h(ip) -uroot -p(password) databasename tablename > tablename.sql 
+恢复表: mysqlbinmysql -h(ip) -uroot -p(password) databasename tablename < tablename.sql（操作前先把原来表删除） 
+
+
+增加列：ALTER TABLE t2 ADD c INT UNSIGNED NOT NULL AUTO_INCREMENT,ADD INDEX (c); 
+修改列：ALTER TABLE t2 MODIFY a TINYINT NOT NULL, CHANGE b c CHAR(20); 
+删除列：ALTER TABLE t2 DROP COLUMN c; 
+
+
+mysqldump -h localhost -uroot -phdtravel  hdtravel t_valid_server > d:\dump.sql
+
+
+#主从热备
+
+
+
+
+
+linux
+
+sestatus 查看selinux状态
+--查看vsftpd 启动状态
+[root@singledb ~]# chkconfig --list vsftpd
+vsftpd          0:off   1:off   2:off   3:off   4:off   5:off   6:off
+[root@singledb ~]# chkconfig  vsftpd on
+
+#检测是否有多个超级用户
+grep :x:0: /etc/passwd
+
+
+service iptables save
+service iptables restart
+
+
+
+
+sudo ./lynis --check-all -Q
+sudo grep Warning /var/log/lynis.log
+sudo grep Suggestion /var/log/lynis.log
+
+ tcpdump -i eth0 -nv > 111
+
+   tcpdump -i eth0 -nnA '!port 13854'
+ 
+ find / -mtime -7 -type f -perm /u=x,g=x,o=x
+ lsof -R  | grep "/usr/bin"
+  netstat -apn
+  
+  
+
+iptables -t filter -A INPUT -s 59.188.242.190 -p udp -j DROP
+iptables -t filter -A INPUT -s 59.188.242.190 -p tcp -j DROP
+iptables -t filter -A OUTPUT -d 59.188.242.190 -p udp -j DROP
+iptables -t filter -A OUTPUT -d 59.188.242.190 -p tcp -j DROP
+service iptables save
+service iptables restart
+  
+  
+  #查看磁盘空间
+  df -h
+  
+  maldet --scan-all

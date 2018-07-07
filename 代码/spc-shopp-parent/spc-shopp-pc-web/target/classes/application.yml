@@ -1,0 +1,21 @@
+server:
+  port: 80
+#  context-path: /web
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: spc-shopp-pc-web
+feign:
+   hystrix:
+     enabled: true
+###超时时间
+hystrix:
+   command: 
+     default: 
+       execution: 
+        isolation:
+         thread: 
+          timeoutInMilliseconds: 4000    

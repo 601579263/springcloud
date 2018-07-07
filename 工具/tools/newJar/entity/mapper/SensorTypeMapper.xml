@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="entity.mapper.SensorTypeMapper" >
+  <resultMap id="BaseResultMap" type="entity.SensorType" >
+    <id column="st_id" property="stId" jdbcType="INTEGER" />
+    <result column="s_imei_type" property="sImeiType" jdbcType="VARCHAR" />
+    <result column="rule_id" property="ruleId" jdbcType="INTEGER" />
+    <result column="st_name" property="stName" jdbcType="VARCHAR" />
+    <result column="st_type" property="stType" jdbcType="INTEGER" />
+    <result column="st_check_day" property="stCheckDay" jdbcType="INTEGER" />
+    <result column="st_description" property="stDescription" jdbcType="VARCHAR" />
+    <result column="st_img_url" property="stImgUrl" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    st_id, s_imei_type, rule_id, st_name, st_type, st_check_day, st_description, st_img_url
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_sensor_type
+    where st_id = #{stId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_sensor_type
+    where st_id = #{stId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="entity.SensorType" >
+    insert into t_sensor_type (st_id, s_imei_type, rule_id, 
+      st_name, st_type, st_check_day, 
+      st_description, st_img_url)
+    values (#{stId,jdbcType=INTEGER}, #{sImeiType,jdbcType=VARCHAR}, #{ruleId,jdbcType=INTEGER}, 
+      #{stName,jdbcType=VARCHAR}, #{stType,jdbcType=INTEGER}, #{stCheckDay,jdbcType=INTEGER}, 
+      #{stDescription,jdbcType=VARCHAR}, #{stImgUrl,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="entity.SensorType" >
+    insert into t_sensor_type
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="stId != null" >
+        st_id,
+      </if>
+      <if test="sImeiType != null" >
+        s_imei_type,
+      </if>
+      <if test="ruleId != null" >
+        rule_id,
+      </if>
+      <if test="stName != null" >
+        st_name,
+      </if>
+      <if test="stType != null" >
+        st_type,
+      </if>
+      <if test="stCheckDay != null" >
+        st_check_day,
+      </if>
+      <if test="stDescription != null" >
+        st_description,
+      </if>
+      <if test="stImgUrl != null" >
+        st_img_url,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="stId != null" >
+        #{stId,jdbcType=INTEGER},
+      </if>
+      <if test="sImeiType != null" >
+        #{sImeiType,jdbcType=VARCHAR},
+      </if>
+      <if test="ruleId != null" >
+        #{ruleId,jdbcType=INTEGER},
+      </if>
+      <if test="stName != null" >
+        #{stName,jdbcType=VARCHAR},
+      </if>
+      <if test="stType != null" >
+        #{stType,jdbcType=INTEGER},
+      </if>
+      <if test="stCheckDay != null" >
+        #{stCheckDay,jdbcType=INTEGER},
+      </if>
+      <if test="stDescription != null" >
+        #{stDescription,jdbcType=VARCHAR},
+      </if>
+      <if test="stImgUrl != null" >
+        #{stImgUrl,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="entity.SensorType" >
+    update t_sensor_type
+    <set >
+      <if test="sImeiType != null" >
+        s_imei_type = #{sImeiType,jdbcType=VARCHAR},
+      </if>
+      <if test="ruleId != null" >
+        rule_id = #{ruleId,jdbcType=INTEGER},
+      </if>
+      <if test="stName != null" >
+        st_name = #{stName,jdbcType=VARCHAR},
+      </if>
+      <if test="stType != null" >
+        st_type = #{stType,jdbcType=INTEGER},
+      </if>
+      <if test="stCheckDay != null" >
+        st_check_day = #{stCheckDay,jdbcType=INTEGER},
+      </if>
+      <if test="stDescription != null" >
+        st_description = #{stDescription,jdbcType=VARCHAR},
+      </if>
+      <if test="stImgUrl != null" >
+        st_img_url = #{stImgUrl,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where st_id = #{stId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="entity.SensorType" >
+    update t_sensor_type
+    set s_imei_type = #{sImeiType,jdbcType=VARCHAR},
+      rule_id = #{ruleId,jdbcType=INTEGER},
+      st_name = #{stName,jdbcType=VARCHAR},
+      st_type = #{stType,jdbcType=INTEGER},
+      st_check_day = #{stCheckDay,jdbcType=INTEGER},
+      st_description = #{stDescription,jdbcType=VARCHAR},
+      st_img_url = #{stImgUrl,jdbcType=VARCHAR}
+    where st_id = #{stId,jdbcType=INTEGER}
+  </update>
+</mapper>

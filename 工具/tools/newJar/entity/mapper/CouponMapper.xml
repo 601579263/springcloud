@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="entity.mapper.CouponMapper" >
+  <resultMap id="BaseResultMap" type="entity.Coupon" >
+    <id column="cou_id" property="couId" jdbcType="BIGINT" />
+    <id column="r_id" property="rId" jdbcType="BIGINT" />
+    <result column="r_name" property="rName" jdbcType="VARCHAR" />
+    <result column="cou_name" property="couName" jdbcType="VARCHAR" />
+    <result column="cou_image" property="couImage" jdbcType="VARCHAR" />
+    <result column="cou_detail" property="couDetail" jdbcType="VARCHAR" />
+    <result column="cou_expiry_start" property="couExpiryStart" jdbcType="TIMESTAMP" />
+    <result column="cou_expiry_end" property="couExpiryEnd" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    cou_id, r_id, r_name, cou_name, cou_image, cou_detail, cou_expiry_start, cou_expiry_end
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="entity.CouponKey" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_coupon
+    where cou_id = #{couId,jdbcType=BIGINT}
+      and r_id = #{rId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="entity.CouponKey" >
+    delete from t_coupon
+    where cou_id = #{couId,jdbcType=BIGINT}
+      and r_id = #{rId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="entity.Coupon" >
+    insert into t_coupon (cou_id, r_id, r_name, 
+      cou_name, cou_image, cou_detail, 
+      cou_expiry_start, cou_expiry_end)
+    values (#{couId,jdbcType=BIGINT}, #{rId,jdbcType=BIGINT}, #{rName,jdbcType=VARCHAR}, 
+      #{couName,jdbcType=VARCHAR}, #{couImage,jdbcType=VARCHAR}, #{couDetail,jdbcType=VARCHAR}, 
+      #{couExpiryStart,jdbcType=TIMESTAMP}, #{couExpiryEnd,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="entity.Coupon" >
+    insert into t_coupon
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="couId != null" >
+        cou_id,
+      </if>
+      <if test="rId != null" >
+        r_id,
+      </if>
+      <if test="rName != null" >
+        r_name,
+      </if>
+      <if test="couName != null" >
+        cou_name,
+      </if>
+      <if test="couImage != null" >
+        cou_image,
+      </if>
+      <if test="couDetail != null" >
+        cou_detail,
+      </if>
+      <if test="couExpiryStart != null" >
+        cou_expiry_start,
+      </if>
+      <if test="couExpiryEnd != null" >
+        cou_expiry_end,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="couId != null" >
+        #{couId,jdbcType=BIGINT},
+      </if>
+      <if test="rId != null" >
+        #{rId,jdbcType=BIGINT},
+      </if>
+      <if test="rName != null" >
+        #{rName,jdbcType=VARCHAR},
+      </if>
+      <if test="couName != null" >
+        #{couName,jdbcType=VARCHAR},
+      </if>
+      <if test="couImage != null" >
+        #{couImage,jdbcType=VARCHAR},
+      </if>
+      <if test="couDetail != null" >
+        #{couDetail,jdbcType=VARCHAR},
+      </if>
+      <if test="couExpiryStart != null" >
+        #{couExpiryStart,jdbcType=TIMESTAMP},
+      </if>
+      <if test="couExpiryEnd != null" >
+        #{couExpiryEnd,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="entity.Coupon" >
+    update t_coupon
+    <set >
+      <if test="rName != null" >
+        r_name = #{rName,jdbcType=VARCHAR},
+      </if>
+      <if test="couName != null" >
+        cou_name = #{couName,jdbcType=VARCHAR},
+      </if>
+      <if test="couImage != null" >
+        cou_image = #{couImage,jdbcType=VARCHAR},
+      </if>
+      <if test="couDetail != null" >
+        cou_detail = #{couDetail,jdbcType=VARCHAR},
+      </if>
+      <if test="couExpiryStart != null" >
+        cou_expiry_start = #{couExpiryStart,jdbcType=TIMESTAMP},
+      </if>
+      <if test="couExpiryEnd != null" >
+        cou_expiry_end = #{couExpiryEnd,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where cou_id = #{couId,jdbcType=BIGINT}
+      and r_id = #{rId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="entity.Coupon" >
+    update t_coupon
+    set r_name = #{rName,jdbcType=VARCHAR},
+      cou_name = #{couName,jdbcType=VARCHAR},
+      cou_image = #{couImage,jdbcType=VARCHAR},
+      cou_detail = #{couDetail,jdbcType=VARCHAR},
+      cou_expiry_start = #{couExpiryStart,jdbcType=TIMESTAMP},
+      cou_expiry_end = #{couExpiryEnd,jdbcType=TIMESTAMP}
+    where cou_id = #{couId,jdbcType=BIGINT}
+      and r_id = #{rId,jdbcType=BIGINT}
+  </update>
+</mapper>
